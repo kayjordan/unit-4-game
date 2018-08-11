@@ -82,6 +82,7 @@
 
         <div class="col-sm-3">
                 <div id ="Score"> 
+                    <p>Your total score is:  </p>
                 </div>   
     </div>    
 </div>
@@ -153,9 +154,6 @@ startNum = redNum + startNum;
     console.log(startNum);
     compareNum();
 
-
-    $("#jewelValue").text(startNum);
-
 }
 
 
@@ -164,8 +162,6 @@ function blueClick() {
 console.log(startNum);
 
 compareNum();
-
-   $("#jewelValue").text(startNum);
 }
 
 
@@ -175,8 +171,6 @@ function yellowClick() {
 console.log(startNum);
 
 compareNum();
-
-   $("#jewelValue").text(startNum);
 }
 
 function greenClick() { 
@@ -185,7 +179,6 @@ function greenClick() {
 console.log(startNum);
 
 compareNum();
-$("#jewelValue").text(startNum);
 }
 
 
@@ -216,7 +209,6 @@ function compareNum()
            console.log("You win!");
             wins++; 
             generateNum(); 
-            $("#WinsandLosses").text("wins: " + wins);
            
 
     }
@@ -228,7 +220,6 @@ function compareNum()
       losses++;
       generateNum(); 
         //go throught the function again
-        $("#WinsandLosses").text("losses: " + losses);
 
     }
 
